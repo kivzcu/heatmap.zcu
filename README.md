@@ -9,7 +9,7 @@ App was created within the school project by ZČU students. The main goal of thi
 ## Responsive
 <img src="./doc/images/website-responsive.png" style="width: 200px; height: auto;">
 
-<br><hr><br>
+<hr>
 
 ## Technologies
 
@@ -17,14 +17,13 @@ App was created within the school project by ZČU students. The main goal of thi
 - [**Symfony**](https://symfony.com/) – PHP framework
 - [**MongoDB**](https://www.mongodb.com/) – Database
 
-<br><hr><br>
+<hr>
 
 ## 🔩 Development env
 ### SW needed for development
 * **[🐳 docker](https://docs.docker.com/engine/install)**
 * **[🐳 docker-compose](https://docs.docker.com/compose/install/)**
 * **[📝 Visual Studio Code](https://code.visualstudio.com/Download)**
-<br><br>
 
 ### Development setup
 * First you need to **build** and **run** all needed containers
@@ -44,8 +43,6 @@ App was created within the school project by ZČU students. The main goal of thi
 * Click on <kbd>Reopen in Container</kbd>
 * Now you are inside the **docker container**. You should see something like this in the bottom left corner
 
-</br>
-</br>
 <img src="./doc/images/dev-container.png">
 
 * To **close attach or reopen project in container** use these arrows
@@ -62,8 +59,6 @@ To make changes inside crawler module click on file `python.code-workspace` whic
 * Click on <kbd>Reopen in Container</kbd>
 * Now you are inside the **docker container**. You should see something like this in the bottom left corner
 
-</br>
-</br>
 <img src="./doc/images/dev-container.png">
 
 * To **close attach or reopen project in container** use these arrows
@@ -77,7 +72,7 @@ To make changes inside crawler module click on file `python.code-workspace` whic
 ## 🚀 Production env
 * To run production env on your local machine execute this `./scripts/build.sh`
 
-<br><hr><br>
+<hr>
 
 ## Add new dataset to heatmap
 
@@ -91,7 +86,7 @@ Follow these steps:
 6. Fill coordinates to `devices` items in the YAML config file.
 7. After running `force_update_datasets.py` again, data will be loaded to database.
 
-<br><hr><br>
+<hr>
 
 ## Auto updating datasets –⁠ Cron script
 
@@ -99,7 +94,7 @@ File `modules/crawler/crone_update_script.py` performs update of all added datas
 
 Script `modules/crawler/crone_update_script.py` is executed by systems cron (`modules/crawler/crontab`) every day.
 
-<br><hr><br>
+<hr>
 
 ## Customize appearance of the heatmap
 
