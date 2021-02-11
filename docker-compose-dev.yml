@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+       php-fpm:
+               build: './docker/php-fpm/dev'
+               volumes:
+                        - vscode-extensions-php:/var/www/symfony/.vscode-server/extensions
+                        - ./logs/xdebug:/var/www/symfony/xdebug
+
+       crawler:
+               volumes: 
+                        - vscode-extensions-crawler:/src/.vscode-server/extensions
+       database:
+               volumes:
+                        - data-db:/data/db
+                        - ./dev-dump:/dev-dump
+       nginx: 
+               volumes: 
+                        - ./docker/nginx/sites-dev:/etc/nginx/sites-available
+volumes:
+    data-db:
+    vscode-extensions-php:
+    vscode-extensions-crawler:

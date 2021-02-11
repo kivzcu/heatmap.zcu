@@ -1,0 +1,8 @@
+sentry:
+    dsn: 'https://0035d9c3563b492db2dc93d439230398@o505192.ingest.sentry.io/5593065'
+    messenger: 
+        enabled: true # flushes Sentry messages at the end of each message handling
+        capture_soft_fails: true # captures exceptions marked for retry too
+    options:
+        environment: '%kernel.environment%'
+        release: '1.0' #your app version

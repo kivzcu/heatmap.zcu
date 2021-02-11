@@ -1,0 +1,11 @@
+logs
+website/vendor/
+/website/var
+cache
+.phpcs-cache
+.php_cs.cache
+./database/
+.idea
+dev-dump
+*.lock
+.vscode-server

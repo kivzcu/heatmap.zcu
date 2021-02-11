@@ -1,0 +1,72 @@
+version: "3.2"
+services:
+       crawler:
+                build: 
+                        context: ./modules/crawler
+                        dockerfile: ../../docker/crawler/Dockerfile
+
+                depends_on: 
+                        - database
+                networks:
+                        - backend
+                volumes:
+                        - ./modules/crawler/:/src
+                        - ./logs/crawler:/src/CrawlerLogs
+                container_name: "heatmap_crawler"
+                environment:
+                        - TZ=Europe/Prague
+                
+       php-fpm:
+               build: './docker/php-fpm'
+               depends_on: 
+                       - database
+               ports: 
+                       - "9000:9000"
+               volumes:
+                       - ./website/:/var/www/symfony
+
+               container_name: "heatmap_php_fpm"
+               networks: 
+                        - backend
+       nginx:
+               build: './docker/nginx'
+               depends_on:
+                       - php-fpm
+                       - database
+                       - crawler
+               networks:
+                       - frontend
+                       - backend
+               ports:
+                       - "80:80"
+               volumes:
+                       - ./logs/nginx:/var/log/nginx
+                       - ./website/:/var/www/symfony
+                       - ./docker/nginx/sites:/etc/nginx/sites-available
+
+               container_name: "heatmap_nginx"
+       database:
+               image: 'mongo'
+               container_name: "heatmap_mongodb"
+               restart: always
+               networks:
+                       - backend
+               ports:
+                       - '27017-27019:27017-27019'
+               environment:
+                       MONGO_INITDB_DATABASE: open-data-db
+                       #
+                       # TODO: set MongoDB credentials
+                       #
+                       MONGO_INITDB_ROOT_USERNAME: root
+                       MONGO_INITDB_ROOT_PASSWORD: root
+               volumes:
+                       - data-db:/data/db
+                       - ./dev-dump:/dev-dump
+networks:
+       frontend:
+       backend:
+
+                        
+volumes:
+    data-db:

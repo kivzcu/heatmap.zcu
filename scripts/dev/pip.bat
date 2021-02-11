@@ -1,0 +1,1 @@
+docker-compose exec -T crawler pip install -r /var/python/requirements.txt

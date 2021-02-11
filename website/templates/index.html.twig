@@ -1,0 +1,175 @@
+{% extends 'base.html.twig' %}
+  
+{% block title %}Heatmap.ZČU · O projektu{% endblock %}
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/swiper.min.css') }}" />
+{% endblock %}
+
+{% block bodyClass %} class="intro"{% endblock %}
+{% block body %}
+
+  <header>
+    <div class="logo">
+      <a href="{{ path('home') }}">
+        <img src="{{ asset('img/logo-zcu.svg') }}" alt="Logo Západočeské univerzity v Plzni">
+      </a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+      <a href="/heatmap/?date=2019-04-11&amp;time=9&amp;type=JIS" class="navbar-brand shifted">
+        <h1>Heatmap.ZČU</h1>
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <h2>
+              <a href="#" onclick="swiper.slideTo(1)" class="nav-link active" id="slide-nav-1" data-toggle="collapse" data-target=".navbar-collapse.show">Život na ZČU během dne</a>
+            </h2>
+          </li>
+          <li class="nav-item">
+            <h2>
+              <a href="#" onclick="swiper.slideTo(2)" class="nav-link" id="slide-nav-2" data-toggle="collapse" data-target=".navbar-collapse.show">Hledání anomálií</a>
+            </h2>
+          </li>
+          <li class="nav-item">
+            <h2>
+              <a href="#" onclick="swiper.slideTo(3)" class="nav-link" id="slide-nav-3" data-toggle="collapse" data-target=".navbar-collapse.show">O&nbsp;projektu</a>
+            </h2>
+          </li>
+          <li class="nav-item button">
+            <h2>
+              <a href="/heatmap/?date=2019-04-11&amp;time=9&amp;type=JIS" class="nav-link">Zobrazit heatmapu</a>
+            </h2>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-bg-1">
+        <div class="container">
+          <div class="slide-text">
+            <span class="slide-index">01</span>
+            <h3>Život na ZČU během dne</h3>
+            <hr>
+            <p>Zobrazte si heatmapu života univerzity hodinu po hodině během jednoho dne. Od ranního probouzení, kdy studenti a&nbsp;zaměstnanci přicházejí do laboratoří, přes polední špičku v&nbsp;menze až do samotného večera, kdy končí poslední z&nbsp;přednášek a&nbsp;cvičení.</p>
+            <a href="/heatmap/?date=2019-04-11&amp;time=9&amp;type=JIS" class="btn btn-primary" role="button">Vyzkoušet heatmapu</a>
+          </div>
+        </div>
+
+        <div class="map-point point-1">
+          <div class="desc">
+            <div class="circle"></div>
+            <strong>Bufet</strong>
+            <p>Alternativa k&nbsp;menze v&nbsp;podobě bufetu na FST&nbsp;ZČU.</p>
+          </div>
+        </div>
+
+        <div class="map-point point-2">
+          <div class="desc">
+            <div class="circle"></div>
+            <strong>Menza</strong>
+            <p>Polední špička v menze.</p>
+          </div>
+        </div>
+
+        <div class="slide-background"></div>
+      </div>
+
+      <div class="swiper-slide slide-bg-2">
+        <div class="container">
+          <div class="slide-text">
+            <span class="slide-index">02</span>
+            <h3>Hledání anomálií</h3>
+            <hr>
+            <p>Heatmapa vám také dává možnost prozkoumávat data vlastním způsobem &ndash; stačí jen zvolit konkrétní datum a&nbsp;čas, pro které chcete data zobrazit. Můžete tak objevit i&nbsp;různé anomálie, například narazit na noční návštěvníky kampusu nebo odhalit návraty na studentské koleje v&nbsp;brzkých ranních hodinách&hellip;</p>
+            <a href="/heatmap/?date=2019-04-11&amp;time=9&amp;type=JIS" class="btn btn-primary" role="button">Vyzkoušet heatmapu</a>
+          </div>
+        </div>
+
+        <div class="map-point point-3">
+          <div class="desc">
+            <div class="circle"></div>
+            <strong>Nezvyklá aktivita</strong>
+            <p>Po středečním večeru bylo zaznamenáno větší množství vstupů na kolej kolem 3:00 ráno.</p>
+          </div>
+        </div>
+
+        <div class="slide-background"></div>
+      </div>
+
+      <div class="swiper-slide slide-bg-3">
+        <div class="container">
+          <div class="slide-text">
+            <span class="slide-index">03</span>
+            <h3>O&nbsp;projektu</h3>
+            <hr>
+            <p>Západočeská univerzita v&nbsp;Plzni poskytuje v&nbsp;rámci otevřených dat (<a href="http://opendata.zcu.cz" target="_blank">opendata.zcu.cz</a>) vybrané datové sady získávané z&nbsp;různých provozních a&nbsp;IoT systémů. V&nbsp;rámci výukového projektu se studentský tým rozhodl několik těchto datových sad využít, zpracovat je a&nbsp;vizualizovat na mapovém podkladu formou heatmapy. Zahrnuta jsou předem anonymizovaná data s&nbsp;časovými značkami získaná mj.&nbsp;z&nbsp;připojení k&nbsp;univerzitní síti, z&nbsp;kartových snímačů na vstupech (JIS karty) a&nbsp;ze stojanů k&nbsp;zapůjčování koloběžek.</p>
+            <p>Na těchto stránkách si můžete tuto vizualizaci prohlížet a&nbsp;prozkoumávat den po dni, hodinu po hodině, a&nbsp;nahlédnout tak na univerzitní kampus (i&nbsp;studentské koleje) jako na jeden velký žijící organismus.</p>
+            <hr>
+            <div class="copyright">
+              <p>
+                <strong>Autoři aplikace:</strong> Tomáš Ballák, Petr Hlaváč, Jakub Vašta, Martin Šebela
+              </p>
+              <p>
+                <span>Vytvořeno v&nbsp;rámci semestrální práce oboru <i>Softwarové inženýrství</i> na KIV&nbsp;FAV&nbsp;ZČU</span><br>
+                <strong>Odborný dohled:</strong> doc.&nbsp;Přemysl Brada
+              </p>
+            </div>
+            <p class="logos-partners">
+              <a href="https://fav.zcu.cz" target="_blank">
+                <img src="img/logo-fav-zcu.svg" alt="Logo Fakulty aplikovaných věd ZČU v Plzni">
+              </a>
+              <a href="http://opendata.zcu.cz" target="_blank">
+                <img src="img/logo-opendata-zcu.svg" alt="Logo OpenData ZČU">
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="slide-background"></div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-pagination-buttons">
+      <a href="#" onclick="swiper.slidePrev()" class="btn btn-secondary btn-prev"></a>
+      <a href="#" onclick="swiper.slideNext()" class="btn btn-secondary btn-next"></a>
+    </div>
+  </div>
+
+{% endblock %}
+{% block javascripts %}
+
+  <script src="{{ asset('js/vendor/swiper.min.js') }}"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      on: {
+        slideChange: function() {
+          let elms = document.querySelectorAll('.nav-link');
+
+          for (let i = 1; i < elms.length; i++) {
+            document.getElementById('slide-nav-' + i).className = 'nav-link' + ((this.realIndex === i - 1) ? ' active' : '');
+          }
+        }
+      }
+    });
+  </script>
+  <script src="{{ asset('js/vendor/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
+
+{% endblock %}

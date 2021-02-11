@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.remote-containers",
+        "vscode-icons-team.vscode-icons",
+        "ms-azuretools.vscode-docker",
+        "raynigon.nginx-formatter",
+        "mads-hartmann.bash-ide-vscode",
+        "shakram02.bash-beautify"
+    ]
+
+}

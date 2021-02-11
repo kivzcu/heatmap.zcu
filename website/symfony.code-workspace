@@ -1,0 +1,81 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"php.suggest.basic":false,
+		"files.autoSave": "afterDelay",
+		"php-cs-fixer.executablePath": "/var/www/symfony/vendor/bin/php-cs-fixer",
+		"php-cs-fixer.config": ".php_cs;.php_cs.dist",
+		"php-cs-fixer.onsave": true,
+		"eslint.enable": true,
+		"eslint.format.enable": true,
+		"eslint.codeActionsOnSave.mode": "all",
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true
+		},
+	},
+	"extensions": {
+		"recommendations": [
+			"vscode-icons-team.vscode-icons",
+			"felixfbecker.php-intellisense",
+			"whatwedo.twig",
+			"felixfbecker.php-debug",
+			"junstyle.php-cs-fixer",
+			"refgd.easy-compile"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [{
+			"label": "PHP Linter (DOCKER SERVICE)",
+			"command": "docker-compose",
+			"args": ["exec", "php-fpm", "./vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--dry-run", "--config", "/var/www/symfony/.php_cs", "--stop-on-violation", "--using-cache=no"],
+			"windows":{
+				"command": "docker-compose",
+				"args": ["exec", "php-fpm","./vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--dry-run", "--config", "/var/www/symfony/.php_cs", "--stop-on-violation", "--using-cache=no"],
+			}
+		},
+		{
+			"label": "Format (DOCKER SERVICE)",
+			"command": "docker-compose",
+			"args": ["exec", "php-fpm", "/var/www/symfony/vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--config", "/var/www/symfony/.php_cs"],
+			"windows":{
+				"command": "docker-compose",
+				"args": ["exec", "php-fpm", "/var/www/symfony/vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--config", "/var/www/symfony/.php_cs"],
+			}
+		},{
+			"label": "PHP Linter",
+			"command": "docker-compose",
+			"args": ["exec", "php-fpm", "./vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--dry-run", "--config", "/var/www/symfony/.php_cs", "--stop-on-violation", "--using-cache=no"],
+			"windows":{
+				"command": "docker-compose",
+				"args": ["exec", "php-fpm","./vendor/bin/php-cs-fixer", "fix", "/var/www/symfony/src", "--dry-run", "--config", "/var/www/symfony/.php_cs", "--stop-on-violation", "--using-cache=no"],
+			}
+		},
+		{
+			"label": "Format",
+			"command": "./vendor/bin/php-cs-fixer",
+			"args": ["fix", "/var/www/symfony/src", "--config", "/var/www/symfony/.php_cs"],
+			"windows":{
+				"command": "./vendor/bin/php-cs-fixer",
+				"args": ["fix", "/var/www/symfony/src", "--config", "/var/www/symfony/.php_cs"],
+			}
+		}]
+	},
+	"launch": {
+		"configurations": [
+			{
+            "name": "Listen for XDebug",
+            "type": "php",
+			"request": "launch",
+			"log": true,
+			"pathMappings": {
+				"/var/www/symfony": "${workspaceFolder}/"
+			},
+			"port": 9001
+			}]
+	}
+}

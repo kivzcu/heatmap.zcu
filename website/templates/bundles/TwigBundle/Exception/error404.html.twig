@@ -1,0 +1,15 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/404.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="error-box-wrapper">
+    <div class="error-box-404">
+        <h2>Stránka nebyla nalezena</h2>
+        <h1>404</h1>
+        <a href="https://heatmap.zcu.cz"><span class="home">Domovská stránka ⇢ </span></a>
+    </div>
+</div>
+{% endblock %}

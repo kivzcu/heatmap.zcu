@@ -1,0 +1,37 @@
+# jmeno datasetu, pod kterym bude zobrazen v aplikaci
+display-name: Půjčování koloběžek
+# barva pro dataset
+display-color: '#0048A9'
+# jednoslovný název datasetu, pod kterym bude reprezentovana v architektuře
+dataset-name: KOLOBEZKY
+# root slozka, ktera obsahuje odkazy na dataset
+url: https://openstore.zcu.cz/
+# volitelny parameter, ktery specifikuje vzor jmena datasetu, ktera se budou stahovat
+regex: OD_ZCU_KOLOBEZKY_[0-9][0-9]_[0-9][0-9][0-9][0-9]_CSV.zip
+# volitelny parametr, ktery udava jednou za kolik dní se budou nová data vyhledávat
+update-period: 24
+# pozice jednotlivych zarizeni, ktera jsou v datasetu
+devices:
+  - stojan-knihovna:
+      x: 49.725145
+      y: 13.353319
+
+  - stojan-Machovka:
+      x: 49.725197
+      y: 13.368016
+
+  -  stojan-FDU:
+      x: 49.725360
+      y: 13.347909
+
+  - stojan-bory:
+      x: 49.726033
+      y: 13.365958
+
+  - stojan-zcu:
+      x: 49.724576
+      y: 13.350861
+
+  - stojan-borska:
+      x: 49.734518
+      y: 13.359475

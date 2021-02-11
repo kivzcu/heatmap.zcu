@@ -1,0 +1,15 @@
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+            <testsuite name="Project Test Suite">
+                <directory>tests</directory>
+            </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="test" />
+        <env name="KERNEL_CLASS" value="App\Kernel" />
+        <!--
+            TODO: set MongoDB credentials
+        -->
+        <env name="DATABASE_CONNECTION_STRING" value="mongodb://root:root@database" />
+    </php>
+</phpunit>

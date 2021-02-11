@@ -1,0 +1,198 @@
+# jmeno datasetu, pod kterym bude zobrazen v aplikaci
+display-name: Snímače JIS karet
+# barva pro dataset
+display-color: '#0B155A'
+# jednoslovný název datasetu, pod kterym bude reprezentovana v architektuře
+dataset-name: JIS
+# root slozka, ktera obsahuje odkazy na dataset
+url: https://openstore.zcu.cz/
+# volitelny parameter, ktery specifikuje vzor jmena datasetu, ktera se budou stahovat
+regex: OD_ZCU_JIS_[0-9][0-9]_[0-9][0-9][0-9][0-9]_CSV.zip
+# volitelny parametr, ktery udava jednou za kolik dní se budou nová data vyhledávat
+update-period: 24
+# pozice jednotlivych zarizeni, ktera jsou v datasetu
+devices:
+  - L1L2-vchod:
+      x: 49.76000
+      y: 13.37257
+
+  - M16:
+      x: 49.72525
+      y: 13.36888
+
+  - Zavora-NTIS-vyjezd:
+      x: 49.7262219
+      y: 13.3528561
+
+  - EXT/kola:
+      x: SKIP
+      y: SKIP
+
+  - Menza4-kasa1:
+      x: 49.7237989
+      y: 13.3523156
+
+  - STUD_KL87:
+      x: 49.7366578
+      y: 13.3707792
+
+  - VC-VJEZD:
+      x: 49.7495422
+      y: 13.3750531
+
+  - KolaBory-vnitrni:
+      x: 49.7269886
+      y: 13.3514081
+
+  - Menza1-kasa-l:
+      x: 49.7474797
+      y: 13.3688214
+
+  - Zavora-Kaplirova:
+      x: 49.7233544
+      y: 13.3515511
+
+  - STUD_ST407:
+      x: 49.7480758
+      y: 13.3754453
+
+  - Menza4-kasa4:
+      x: 49.7237278
+      y: 13.3523289
+
+  - NTIS-BUFET:
+      x: 49.7268478
+      y: 13.3518358
+
+  - VC-VYJEZD:
+      x: 49.7495892
+      y: 13.3751494
+
+  - L2:
+      x: 49.76008
+      y: 13.37274
+
+  - STUD_PRA1:
+      x: 49.7477175
+      y: 13.3743808
+
+  - KolaBory-vnejsi:
+      x: 49.7245142
+      y: 13.3508336
+
+  - STUD_CHEB:
+      x: 50.0760217
+      y: 12.3640964
+
+  - STUD_KL20:
+      x: 49.7365781
+      y: 13.3707764
+
+  - L-Posilovna:
+      x: 49.75971
+      y: 13.37339
+
+  - Menza4-kasa2:
+      x: 49.7237694
+      y: 13.3523208
+
+  - Menza4-kasa5:
+      x: 49.7237000
+      y: 13.3523369
+
+  - M14:
+      x: 49.7255186
+      y: 13.3683294
+
+  - A2-Hlavni vchod:
+      x: 49.7344444
+      y: 13.3593669
+
+  - B3-kolarna:
+      x: 49.7245953
+      y: 13.3707044
+
+  - B3-LEVY:
+      x: 49.7249367
+      y: 13.3701197
+
+  - Zavora-FDU:
+      x: 49.7231686
+      y: 13.3474192
+
+  - US 005 - mříž vjezd:
+      x: 49.7262375
+      y: 13.3521872
+
+  - Zavora-NTIS-vjezd:
+      x: 49.7261786
+      y: 13.3528561
+
+  - A3:
+      x: 49.7343642
+      y: 13.3586728
+
+  - STUD_UB211:
+      x: 49.7256172
+      y: 13.3532294
+
+  - KL-Posilovna:
+      x: 49.7368708
+      y: 13.3712481
+
+  - Zavora-FEL:
+      x: 49.7232881
+      y: 13.3499356
+
+  - EXT/kola-B:
+      x: SKIP
+      y: SKIP
+
+  - MenzaKL-vydej:
+      x: 49.7474328
+      y: 13.3688347
+
+  - UV1-Bufet:
+      x: 49.72498
+      y: 13.35047
+
+  - STUD_VC53:
+      x: 49.7492183
+      y: 13.3753786
+
+  - A1:
+      x: 49.7349258
+      y: 13.3589731
+
+  - Parkoviste-vjezd:
+      x: 49.7231925
+      y: 13.3517214
+
+  - US 005 - závora vjezd:
+      x: 49.7262567
+      y: 13.3520503
+
+  - Menza4-kasa3:
+      x: 49.7237503
+      y: 13.3523261
+
+  - L1:
+      x: 49.75987
+      y: 13.37270
+
+  - STUD_UB113:
+      x: 49.7256406
+      y: 13.3531944
+
+  - Menza1-kasa-p:
+      x: 49.7473178
+      y: 13.3688614
+
+  - EP-BUFET:
+      x: 49.7242081
+      y: 13.3504325
+
+  - Parkoviste-vyjezd:
+      x: 49.7231533
+      y: 13.3518328
+      

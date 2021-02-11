@@ -1,0 +1,27 @@
+version: "3.2"
+services:
+       database:
+                volumes:
+                         - /database:/data/db
+       nginx:
+              ports: 
+                     - "443:443"
+              volumes: 
+                     # TODO: set certificate here
+                     # https://github.com/acmesh-official/acme.sh
+                     #
+                     #- /acme-1:/root/.acme.sh/heatmap.zcu.cz
+                     #- /acme-2:/root/.acme.sh/www.heatmap.zcu.cz
+                     #
+                     - /etc/certificate:/certificate
+                     - ./docker/nginx/sites:/etc/nginx/sites-available
+                     - /logs/nginx:/var/log/nginx
+       crawler:
+              volumes: 
+                     - /logs/crawler:/src/CrawlerLogs
+                     - /crawler/data:/src/CrawledData
+                     - /crawler/processed_data:/src/ProcessedData
+       php-fpm:
+              environment: 
+                         - APP_ENV=prod
+                         - APP_DEBUG=0

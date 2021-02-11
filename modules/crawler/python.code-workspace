@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"php.suggest.basic": false,
+		"editor.defaultFormatter": "ms-python.python",
+		"files.autoSave": "afterDelay",
+		"editor.formatOnSave": true,
+		"python.linting.pylintEnabled": true,
+		"python.linting.enabled": true,
+		"python.linting.pylintPath": "pylint",
+		"python.formatting.provider": "yapf",
+	},
+	"extensions": {
+		"recommendations": [
+			"vscode-icons-team.vscode-icons",
+			"ms-python.python",
+			"njpwerner.autodocstring",
+			"magicstack.magicpython",
+			"ms-vscode-remote.remote-containers"
+		]
+	}
+}

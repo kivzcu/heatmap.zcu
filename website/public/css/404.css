@@ -1,0 +1,74 @@
+.error-box-404{
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 24vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Be Vietnam', sans-serif;
+}
+.error-box-404 h1{
+    font-size: 150pt;
+    color: rgb(20,20,20);
+    text-shadow: 1px 1px #0B155A;
+    margin: 0px;
+    font-weight: bold;
+}
+.error-box-404 h2{
+    font-size: 14pt;
+    font-weight: normal;
+    margin-left: -50px;
+    margin-right: -50px;
+    color: dimgray;
+}
+.error-box-404 h1 span {
+    display: inline-block;
+    animation-name: example;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+}
+.error-box-404 > a{
+    background: black;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    color: white;
+}
+.error-box-404 >  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+.error-box-404 > a:hover {
+    -webkit-box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.41);
+}
+.error-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: whtie;
+}
+
+@media (max-width: 767.98px) {
+    .error-box-404 h1{
+        font-size: 100pt;
+    }
+    .error-box-404 > a{
+        background: black;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        color: white;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+  }

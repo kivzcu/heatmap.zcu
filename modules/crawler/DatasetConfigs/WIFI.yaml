@@ -1,0 +1,850 @@
+# jmeno datasetu, pod kterym bude zobrazen v aplikaci
+display-name: Počítačová síť ZČU
+# barva pro dataset
+display-color: '#574b90'
+# jednoslovný název datasetu, pod kterym bude reprezentovana v architektuře
+dataset-name: WIFI
+# root slozka, ktera obsahuje odkazy na dataset
+url: https://openstore.zcu.cz/
+# volitelny parameter, ktery specifikuje vzor jmena datasetu, ktera se budou stahovat
+regex: OD_ZCU_WIFI_[0-9][0-9]_[0-9][0-9][0-9][0-9]_CSV.zip
+# volitelny parametr, ktery udava jednou za kolik dní se budou nová data vyhledávat
+update-period: 24
+# pozice jednotlivych zarizeni, ktera jsou v datasetu
+devices:
+  - bk-a1-s1-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a1-s2-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a1-s3-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a1-s4-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a1-s5-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a1-s6-cat2960-sw.bk.zcu.cz:
+      x: 49.7348525
+      y: 13.3591097
+
+  - bk-a2-cat2960-sw.bk.zcu.cz:
+      x: 49.7343256
+      y: 13.3594611
+
+  - bk-a2-s1-sw.bk.zcu.cz:
+      x: 49.7343256
+      y: 13.3594611
+
+  - bk-a2-s2-sw.bk.zcu.cz:
+      x: 49.7343256
+      y: 13.3594611
+
+  - bk-a2-s3-sw.bk.zcu.cz:
+      x: 49.7343256
+      y: 13.3594611
+
+  - bk-a2-s5-cat2960-sw.bk.zcu.cz:
+      x: 49.7343256
+      y: 13.3594611
+
+  - bk-a3-cat2960-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s1-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s2-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s3-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s4-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s5-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a3-s6-cat2960-sw.bk.zcu.cz:
+      x: 49.7342250
+      y: 13.3586536
+
+  - bk-a4-cat2960-sw.bk.zcu.cz:
+      x: 49.7347539
+      y: 13.3582997
+
+  - bk-cat3750-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - cd-cat4500-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s1-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s2-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s3-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s4-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s5-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s6-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s7-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s8-cat2960-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - cd-s9-cat3750-sw.zcu.cz:
+      x: 50.076237
+      y: 12.364038
+
+  - ec-s1-cat4506-sw.zcu.cz:
+      x: 49.72407
+      y: 13.34886
+
+  - ec-s2-cat4506-sw.zcu.cz:
+      x: 49.72407
+      y: 13.34886
+
+  - eh-cat2960-sw.zcu.cz:
+      x: 49.72407
+      y: 13.34886
+
+  - ek-s1-cat4506-sw.zcu.cz:
+      x: 49.7240233
+      y: 13.3495792
+
+  - ek-s2-cat4506-sw.zcu.cz:
+      x: 49.7240233
+      y: 13.3495792
+
+  - ek-s3-cat2960-sw.zcu.cz:
+      x: 49.7240233
+      y: 13.3495792
+
+  - el-cat2960-sw.zcu.cz:
+      x: 49.72375
+      y: 13.34927
+
+  - el-z1-cat2960c-sw.zcu.cz:
+      x: 49.72375
+      y: 13.34927
+
+  - el-z2-cat2960c-sw.zcu.cz:
+      x: 49.72375
+      y: 13.34927
+
+  - ep-cat2960-sw.zcu.cz:
+      x: 49.7240042
+      y: 13.3506467
+
+  - eu-cat2960-sw.zcu.cz:
+      x: 49.7237997
+      y: 13.3501131
+
+  - eu-s1-cat2960-sw.zcu.cz:
+      x: 49.7237997
+      y: 13.3501131
+
+  - hj-s1-cat4506-sw.zcu.cz:
+      x: 49.7452414
+      y: 13.3703403
+
+  - ic-2504-wlc:
+      x: SKIP
+      y: SKIP
+
+  - ic-4404-wlc:
+      x: SKIP
+      y: SKIP
+
+  - ic-5508-wlc:
+      x: SKIP
+      y: SKIP
+
+  - ic-5520-wlc:
+      x: SKIP
+      y: SKIP
+
+  - ic-n1-nx5548-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - ic-n2-nx5548-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - ic-s1-cat4507-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-u1-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-u3-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-u5-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui121-cat3560-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui402-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui403-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui411-cat2960-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui411-s1-cat3560-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - ic-ui411-s2-cat3560-sw.zcu.cz:
+      x: 49.7250492
+      y: 13.3528547
+
+  - jj-s1-cat2960-sw.zcu.cz:
+      x: 49.7442831
+      y: 13.3758669
+
+  - jj-s3-cat2960-sw.zcu.cz:
+      x: 49.7442831
+      y: 13.3758669
+
+  - kl-idf1-cat2960-sw.zcu.cz:
+      x: 49.7371436
+      y: 13.3710508
+
+  - kl-idf2-cat2960-sw.zcu.cz:
+      x: 49.7364772
+      y: 13.3708725
+
+  - kl-idf3-cat2960-sw.zcu.cz:
+      x: 49.7364773
+      y: 13.3708726
+
+  - kl-s1-cat4506-sw.zcu.cz:
+      x: 49.7366836
+      y: 13.3708725
+
+  - kl-s2-cat2960-sw.zcu.cz:
+      x: 49.7366836
+      y: 13.3708725
+
+  - kl-s2-idf1-cat2960-sw.zcu.cz:
+      x: 49.7366836
+      y: 13.3708725
+
+  - ko-cat3560-sw.zcu.cz:
+      x: 49.7473678
+      y: 13.3688319
+
+  - ko-s1-cat2960-sw.zcu.cz:
+      x: 49.7473678
+      y: 13.3688319
+
+  - lk-l1-cat2960-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s1-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s2-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s3-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s4-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s5-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s6-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s7-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l1-s8-sw.lk.zcu.cz:
+      x: 49.75973
+      y: 13.37265
+
+  - lk-l2-s1-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s2-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s3-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s4-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s5-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s6-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-l2-s7-sw.lk.zcu.cz:
+      x: 49.76025
+      y: 13.37281
+
+  - lk-s1-cat2960-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - lk-s2-cat2960-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - lk-s3-cat2960-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - ls-s1-cat4510-sw.zcu.cz:
+      x: 49.7252217
+      y: 13.3483378
+
+  - ls-s2-cat4506-sw.zcu.cz:
+      x: 49.7252217
+      y: 13.3483378
+
+  - ls-s3-cat2960-sw.zcu.cz:
+      x: 49.7252217
+      y: 13.3483378
+
+  - ls-z-cat2960c-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - mk-b36-cat3560-sw.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s1-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s10-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s11-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s2-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s3-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s4-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s5-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s6-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s7-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s8-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-b36-s9-sw.mk.zcu.cz:
+      x: 49.7245529
+      y: 13.3706943
+
+  - mk-cat4900-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - mk-k-cat2960-sw.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - mk-k-s1-sw.mk.zcu.cz:
+      x: 49.7250088
+      y: 13.3637619
+
+  - mk-k-s2-sw.mk.zcu.cz:
+      x: 49.7250088
+      y: 13.3637619
+
+  - mk-k-s3-sw.mk.zcu.cz:
+      x: 49.7250088
+      y: 13.3637619
+
+  - mk-k-s4-sw.mk.zcu.cz:
+      x: 49.7250088
+      y: 13.3637619
+
+  - mk-k-s5-cat2960-sw.mk.zcu.cz:
+      x: 49.7250088
+      y: 13.3637619
+
+  - mk-m14-cat2960-sw.mk.zcu.cz:
+      x: 49.72549
+      y: 13.36841
+
+  - mk-m14-s1-sw.mk.zcu.cz:
+      x: 49.72549
+      y: 13.36841
+
+  - mk-m14-s2-sw.mk.zcu.cz:
+      x: 49.72549
+      y: 13.36841
+
+  - mk-m14-s3-sw.mk.zcu.cz:
+      x: 49.72549
+      y: 13.36841
+
+  - mk-m14-s4-sw.mk.zcu.cz:
+      x: 49.72549
+      y: 13.36841
+
+  - mk-m16-cat3560-sw.mk.zcu.cz:
+      x: SKIP
+      y: SKIP
+
+  - mk-m16-s1-sw.mk.zcu.cz:
+      x: 49.72523
+      y: 13.3689230
+
+  - mk-m16-s2-sw.mk.zcu.cz:
+      x: 49.72523
+      y: 13.3689230
+
+  - mk-m16-s3-sw.mk.zcu.cz:
+      x: 49.72523
+      y: 13.3689230
+
+  - mk-m16-s4-sw.mk.zcu.cz:
+      x: 49.72523
+      y: 13.3689230
+
+  - mk-m16-s5-sw.mk.zcu.cz:
+      x: 49.72523
+      y: 13.3689230
+
+  - mk-m20-s1-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s10-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s11-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s12-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s2-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s3-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s4-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s5-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s6-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s7-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s8-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - mk-m20-s9-sw.mk.zcu.cz:
+      x: 49.7249083
+      y: 13.3700785
+
+  - nc-s1-cat3560-sw.zcu.cz:
+      x: 49.9590067
+      y: 13.1597578
+
+  - pc-s1-cat4506-sw.zcu.cz:
+      x: 49.7472219
+      y: 13.3742192
+
+  - ps-cat2960-sw.zcu.cz:
+      x: 49.7477264
+      y: 13.3745181
+
+  - ps-s2-cat2960-sw.zcu.cz:
+      x: 49.7477264
+      y: 13.3745181
+
+  - rj-cat2960-sw.zcu.cz:
+      x: 49.7472492
+      y: 13.3749119
+
+  - rj-s1-cat2960-sw.zcu.cz:
+      x: 49.7472492
+      y: 13.3749119
+
+  - rj-s2-cat2960-sw.zcu.cz:
+      x: 49.7472492
+      y: 13.3749119
+
+  - rs-cat2960-sw.zcu.cz:
+      x: 49.7473797
+      y: 13.3745194
+
+  - rti-cat4506-sw.zcu.cz:
+      x: 49.7251314
+      y: 13.3492542
+
+  - so-cat4506-sw.zcu.cz:
+      x: 49.7442831
+      y: 13.3758669
+
+  - so-s1-cat2960-sw.zcu.cz:
+      x: 49.7442831
+      y: 13.3758669
+
+  - so-s2-cat2960-sw.zcu.cz:
+      x: 49.7442831
+      y: 13.3758669
+
+  - sp-cat4506-sw.zcu.cz:
+      x: 49.7470272
+      y: 13.3750561
+
+  - st-cat2960-sw.zcu.cz:
+      x: 49.7481086
+      y: 13.3754478
+
+  - tc-s1-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tc-s2-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tc-s3-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tc-s4-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tc-s5-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tc-s6-cat2960-sw.zcu.cz:
+      x: 49.7239975
+      y: 13.3354819
+
+  - tf-cat4500-sw.zcu.cz:
+      x: 49.7240044
+      y: 13.3332531
+
+  - tf-s1-cat2960-sw.zcu.cz:
+      x: 49.7240044
+      y: 13.3332531
+
+  - tf-s2-cat3560-sw.zcu.cz:
+      x: 49.7240044
+      y: 13.3332531
+
+  - tf-s3-cat2960-sw.zcu.cz:
+      x: 49.7240044
+      y: 13.3332531
+
+  - tg-cat2960-sw.zcu.cz:
+      x: 49.7240322
+      y: 13.3328239
+
+  - tg-s1-cat3560-sw.zcu.cz:
+      x: 49.7240322
+      y: 13.3328239
+
+  - tg-s2-cat3560-sw.zcu.cz:
+      x: 49.7240322
+      y: 13.3328239
+
+  - th-cat2960-sw.zcu.cz:
+      x: 49.7240478
+      y: 13.3324083
+
+  - th-s1-cat3750-sw.zcu.cz:
+      x: 49.7240478
+      y: 13.3324083
+
+  - ts-cat4900-sw.zcu.cz:
+      x: 49.7452728
+      y: 13.3615592
+
+  - ub-cat4506-sw.zcu.cz:
+      x: 49.7253653
+      y: 13.3531008
+
+  - uc-idf1a-cat4510-sw.zcu.cz:
+      x: 49.7264058
+      y: 13.3523981
+
+  - uc-idf1b-cat4510-sw.zcu.cz:
+      x: 49.7264058
+      y: 13.3523981
+
+  - uc-idf2a-cat4510-sw.zcu.cz:
+      x: 49.7267292
+      y: 13.3524275
+
+  - uc-idf2b-cat4510-sw.zcu.cz:
+      x: 49.7267292
+      y: 13.3524275
+
+  - uc-kma-cat2960-sw.zcu.cz:
+      x: 49.7267292
+      y: 13.3524275
+
+  - uf-cat2960-sw.zcu.cz:
+      x: 49.72543
+      y: 13.35180
+
+  - uh-cat2960-sw.zcu.cz:
+      x: 49.7247533
+      y: 13.3493481
+
+  - uk-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-kks-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-kpv-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-kto-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-ops-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-rek-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - uk-s1-cat2960-sw.zcu.cz:
+      x: 49.7250864
+      y: 13.3513331
+
+  - ul-kks-s1-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-kks-s2-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-kks-s3-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-rti-cat2960-sw.zcu.cz:
+      x: 49.7251314
+      y: 13.3492542
+
+  - ul-s-cat6506-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s1-cat4506-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s2-cat4506-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s3-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s4-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s6-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-s8-cat3560-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-tel-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - ul-tel2-cat2960-sw.zcu.cz:
+      x: 49.72532
+      y: 13.35079
+
+  - um-cat2960-sw.zcu.cz:
+      x: 49.7237364
+      y: 13.3523639
+
+  - un-idf3a-cat4510-sw.zcu.cz:
+      x: 49.7267753
+      y: 13.3517356
+
+  - un-idf3b-cat4510-sw.zcu.cz:
+      x: 49.7267753
+      y: 13.3517356
+
+  - un-idf4a-cat4510-sw.zcu.cz:
+      x: 49.7267753
+      y: 13.3517356
+
+  - un-idf4b-cat4510-sw.zcu.cz:
+      x: 49.7267753
+      y: 13.3517356
+
+  - ur-cat2960-sw.zcu.cz:
+      x: 49.7236394
+      y: 13.3515597
+
+  - us-idf5-cat4506-sw.zcu.cz:
+      x: 49.7267050
+      y: 13.3518817
+
+  - us-z-cat2960c-sw.zcu.cz:
+      x: 49.7267050
+      y: 13.3518817
+
+  - ut-cat2960-sw.zcu.cz:
+      x: 49.72372
+      y: 13.35391
+
+  - uu-cat4506-sw.zcu.cz:
+      x: 49.7248694
+      y: 13.3519069
+
+  - uu-kks-cat2960-sw.zcu.cz:
+      x: 49.7248694
+      y: 13.3519069
+
+  - uv-cat2960-sw.zcu.cz:
+      x: 49.7248714
+      y: 13.3505739
+
+  - vc-s1-idf-cat2960-sw.zcu.cz:
+      x: 49.7493611
+      y: 13.3754114
+
+  - vc-s2-cat2960-sw.zcu.cz:
+      x: 49.7493611
+      y: 13.3754114
+
+  - vc-s2-idf-cat2960-sw.zcu.cz:
+      x: 49.7493611
+      y: 13.3754114
+
+  - vc-s3-cat2960-sw.zcu.cz:
+      x: 49.7493611
+      y: 13.3754114
+
+  - vc-s3-idf-cat2960-sw.zcu.cz:
+      x: 49.7493611
+      y: 13.3754114
+      

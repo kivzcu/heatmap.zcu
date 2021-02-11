@@ -1,0 +1,26 @@
+{
+    "forwardPorts": [
+        8000,
+        443,
+        80
+    ],
+    "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "ms-python.python",
+        "njpwerner.autodocstring",
+        "magicstack.magicpython"
+    ],
+    "workspaceFolder": "/src",
+    "service": "crawler",
+    "shutdownAction": "stopCompose",
+    "dockerComposeFile": [
+        "../../../docker-compose.yml",
+        "../../../docker-compose-dev.yml"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/sh"
+    },
+    "mounts": [
+        "source=vscode-extensions-python,target=/src/.vscode-server/extensions,type=volume"
+    ]
+}

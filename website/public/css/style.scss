@@ -1,0 +1,1346 @@
+@import 'bootstrap-4.5.3/_functions.scss';
+@import 'bootstrap-4.5.3/_variables.scss';
+@import 'bootstrap-4.5.3/mixins/_breakpoints.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;600;700;800&display=swap');
+
+
+
+// ---------------------------------------- COLORS SETTINGS ----------------------------------------
+
+// images filepath directory
+$images-dir: '../img/';
+
+// text color
+$text-color: #ffffff;
+
+// website main colors
+$primary-bg-color: #0048A9;
+$primary-bg-color-darker: #004fb3;
+$secondary-bg-color: #0b155a;
+
+// heatmap - header background colors
+$heatmap-nav-border-color: #1c6cc0;
+$heatmap-nav-button-bg-color: #0057be;
+
+// heatmap - controls (map locations, timeline) background colors
+$heatmap-controls-primary-bg: rgba(11, 21, 90, .7);
+$heatmap-controls-secondary-bg: rgba(11, 21, 90, 1);
+
+// heatmap - <input> elements background color on hover
+$input-bg-hover:rgba(255, 255, 255, .1);
+
+// heatmap - <form> dropdown even items background color
+$dropdown-even-items-bg: rgba(0, 0, 0, .05);
+
+// heatmap - popup buttons background colors
+$heatmap-popup-btn-bg: $input-bg-hover;
+$heatmap-popup-btn-hover-bg: rgba(125, 125, 125, .1);
+
+
+
+// ---------------------------------------- STYLE ----------------------------------------
+
+html, body {
+  position: relative;
+  height: 96.2%;
+  font-family: 'Be Vietnam', sans-serif;
+  color: $text-color;
+  background: $secondary-bg-color;
+
+  &.intro {
+    @include media-breakpoint-down(sm) {
+      height: calc(100% - 45px);
+    }
+  }
+}
+
+
+// LINKS
+a {
+  color: $text-color;
+  outline: none;
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+
+// HEADINGS
+h1 {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: .53px;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 55px;
+  }
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .4px;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: .95px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 28px;
+  }
+}
+
+
+// SEPARATOR
+hr {
+  width: 300px;
+  text-align: left;
+  margin: 30px 0;
+  border-top: 2px solid $text-color;
+
+  @include media-breakpoint-down(lg) {
+    width: 90%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin: 15px 0;
+  }
+}
+
+
+// HEADER
+header {
+  height: 70px;
+  background: $primary-bg-color;
+
+
+  // HEADER - LOGO
+  .logo {
+    width: 450px;
+    height: 181px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 2;
+    background: url($images-dir + 'header-bg.png');
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+
+    img {
+      height: 100px;
+      position: relative;
+      top: -50px;
+      left: 50px;
+    }
+  }
+
+  nav.navbar {
+    height: 70px;
+    position: relative;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .navbar-brand.shifted {
+    @media (min-width: 1401px) {
+      position: absolute;
+      top: 0;
+      left: 450px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      left: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    #navigation {
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 1001;
+      opacity: .98;
+      background: $primary-bg-color-darker;
+    }
+  }
+
+  .nav-item {
+    margin-right: 40px;
+
+    @media (max-width: 1480px) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: 1440px) {
+      margin-right: 15px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-right: 30px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-right: 0;
+    }
+
+    .active {
+      font-weight: 800;
+    }
+
+    &.button {
+      .nav-link {
+        padding-left: 22px;
+        padding-right: 22px;
+        border: 1px solid $text-color;
+        border-radius: 20px;
+
+        &:hover {
+          background: $primary-bg-color-darker;
+        }
+      }
+    }
+  }
+
+  .navbar-button {
+    padding: .5rem 22px;
+    margin-right: 40px;
+    border: 1px solid $text-color;
+    border-radius: 20px;
+    text-decoration: none;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    &:hover {
+      background: $primary-bg-color-darker;
+    }
+  }
+
+  .btn-secondary {
+    height: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .4px;
+    border-radius: 0;
+    border: $primary-bg-color;
+    background: $primary-bg-color-darker;
+
+    &:hover {
+      background: $primary-bg-color !important;
+    }
+  }
+}
+
+
+
+// ---------------------------------------- INTRO PAGE ----------------------------------------
+
+
+// INTRO PAGE - SWIPER WRAPPER
+.swiper-container {
+  height: 100%;
+  position: relative;
+
+  .btn-primary {
+    width: 300px;
+    height: 50px;
+    line-height: 32px;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 40px;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-radius: 30px;
+    border: 1px solid $secondary-bg-color;
+    background: $secondary-bg-color;
+  
+    &:hover, &:focus, &:active {
+      border: 1px solid $primary-bg-color;
+      background: $primary-bg-color !important;
+    }
+  
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+      max-width: 270px;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
+  .btn-secondary {
+    background: $secondary-bg-color;
+  
+    &:hover, &:focus, &:active {
+      background: $input-bg-hover !important;
+    }
+  }
+}
+
+
+// INTRO PAGE - SLIDES BACKGROUND IMAGES
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.slide-bg-1 {
+    background: url($images-dir + 'bg-1.jpg') no-repeat top center;
+    background-size: cover;
+  }
+
+  &.slide-bg-2 {
+    background: url($images-dir + 'bg-2.jpg') no-repeat bottom center;
+    background-size: cover;
+  }
+
+  &.slide-bg-3 {
+    background: url($images-dir + 'bg-3.jpg') no-repeat bottom center;
+    background-size: cover;
+
+    .slide-text {
+      width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .container {
+      max-width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+}
+
+
+// INTRO PAGE - SLIDE TEXT
+.slide-text {
+  width: 600px;
+  padding-bottom: 160px;
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 80px;
+  }
+
+  .slide-index {
+    display: inline-block;
+    padding-bottom: 20px;
+    font-size: 72px;
+    font-weight: 800;
+
+    @include media-breakpoint-down(xs) {
+      padding-bottom: 10px;
+      font-size: 48px;
+    }
+  }
+
+  .btn-primary {
+    z-index: 1000;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: url($images-dir + 'btn-play.svg') no-repeat top right;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+// INTRO PAGE - SLIDES PAGINATION BUTTONS
+.swiper-pagination-buttons {
+  width: 200px;
+  height: 56px;
+  padding: 6px;
+  position: absolute;
+  right: 150px;
+  bottom: 20px;
+  z-index: 1;
+  border-radius: 100px;
+  background: $secondary-bg-color;
+
+  @include media-breakpoint-down(lg) {
+    right: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 120px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    bottom: 10px;
+  }
+
+  .btn-prev, .btn-next {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid $text-color;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 12px;
+      position: absolute;
+      top: calc(50% - 6px);
+      left: calc(50% - 4px);
+    }
+  }
+
+  .btn-prev:after {
+    background: url($images-dir + 'btn-prev.svg') no-repeat top right;
+  }
+
+  .btn-next {
+    float: right;
+
+    &:after {
+      background: url($images-dir + 'btn-next.svg') no-repeat top right;
+    }
+  }
+}
+
+
+// INTRO PAGE - PAGINATION BULLETS
+.swiper-pagination-bullets {
+  display: inline-block;
+  width: auto !important;
+  height: 30px;
+  position: absolute;
+  left: 20px !important;
+  bottom: 30px !important;
+  border-radius: 100px;
+  opacity: 0.8;
+  background: $secondary-bg-color;
+
+  @include media-breakpoint-up(lg) {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+
+  &:before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    z-index: 1;
+    border-top: 2px solid $text-color;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 4px 15px !important;
+    opacity: 1;
+    border: 2px solid $secondary-bg-color;
+    background: $secondary-bg-color;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 50%;
+      background: $text-color;
+    }
+
+    &:first-of-type {
+      margin-left: 5px !important;
+    }
+
+    &:last-of-type {
+      margin-right: 5px !important;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 2px solid $text-color;
+  }
+}
+
+
+// INTRO PAGE - SAMPLE MAP POINTS
+.map-point {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid $text-color;
+
+  @media not all and (min-width: 1900px) and (max-width: 2100px) {
+    display: none;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    background: url($images-dir + 'map-point-plus.svg') no-repeat;
+  }
+
+  &:hover {
+    &:before {
+      z-index: 1;
+      top: calc(50% - 1px);
+      background: url($images-dir + 'map-point-minus.svg') no-repeat;
+    }
+
+    .desc {
+      display: block;
+      width: 220px;
+      padding: 10px 20px;
+      z-index: 0;
+      opacity: 0.75;
+      border-radius: 25px 0 25px 0;
+      background: $secondary-bg-color;
+    }
+  }
+
+  .desc {
+    display: none;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+
+    &:last-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  strong {
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 20px 40px;
+    font-size: 16px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    border: 2px solid $text-color;
+  }
+
+  &.point-1 {
+    top: 470px;
+    right: 32.2%;
+  }
+
+  &.point-2 {
+    top: 688px;
+    right: 21.2%;
+  }
+
+  &.point-3 {
+    bottom: 430px;
+    right: 20.8%;
+  }
+}
+
+
+// INTRO PAGE - ADDITIONAL SLIDES BACKGROUND
+.slide-background {
+  width: 650px;
+  height: 290px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url($images-dir + 'footer-bg.svg') no-repeat;
+
+  @include media-breakpoint-down(md) {
+    width: 320px;
+    height: 143px;
+    background-size: 100%;
+  }
+}
+
+
+// INTRO PAGE - ABOUT - COPYRIGHT
+div.copyright {
+  p {
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 17px;
+  }
+}
+
+
+// INTRO PAGE - ABOUT - PARTNERS LOGOS
+p.logos-partners {
+  margin-top: 40px;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+
+    img {
+      margin-left: 50px;
+      height: 80px;
+
+      @media only screen and (max-width: 430px) {
+        height: 70px;
+        margin-left: 0;
+      }
+
+      @media only screen and (max-width: 340px) {
+        height: 60px;
+      }
+    }
+
+    &:first-of-type img {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+// ---------------------------------------- HEATMAP PAGE ----------------------------------------
+
+
+// HEATMAP PAGE - WRAPPER
+#heatmap {
+  height: 100%;
+}
+
+
+// HEATMAP PAGE - FORM IN HEADER
+header.map {
+  @include media-breakpoint-down(md) {
+    .navbar-nav {
+      width: 100%;
+    }
+  }
+
+  form {
+    display: flex;
+    margin: auto;
+  }
+
+  label {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+    letter-spacing: .4px;
+  }
+
+  input {
+    letter-spacing: .4px;
+    color: $text-color;
+    border-color: $primary-bg-color;
+    background: $primary-bg-color;
+
+    &::placeholder {
+      color: $text-color;
+      opacity: 1;
+    }
+
+    &:hover {
+      background: $input-bg-hover;
+    }
+
+    &:focus {
+      background: $text-color;
+      color: $black;
+    }
+  }
+
+
+  // HEATMAP PAGE - FORM - ITEMS
+  .nav-item {
+    padding: 5px;
+    margin: auto 0;
+    border-right: 1px solid $heatmap-nav-border-color;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+      border: 0;
+    }
+
+    &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+      width: 300px;
+      
+      @media (max-width: 1500px) {
+        width: 280px;
+      }
+
+      @media (max-width: 1400px) {
+        width: 230px;
+      }
+
+      @media (max-width: 1400px) {
+        max-width: 230px;
+        width: auto;
+      }
+
+      @include media-breakpoint-down(md) {
+        max-width: none;
+      }
+    }
+
+
+    // HEATMAP PAGE - FORM - DROPDOWNS (TIME, DATASETS)
+    .dropdown {
+      min-width: 200px;
+
+      .btn {
+        width: 100%;
+        text-align: left;
+        letter-spacing: .4px;
+        color: $text-color;
+        background: $primary-bg-color;
+
+        &:hover {
+          background: $input-bg-hover;
+        }
+      }
+
+      .dropdown-menu {
+        width: 100%;
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 1001;
+
+        .dropdown-item {
+          &:active {
+            background: $primary-bg-color;
+          }
+          
+          label {
+            width: 100% !important;
+            margin-left: 0;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #dropdown-time .dropdown-item:nth-of-type(even) {
+        background: $dropdown-even-items-bg;
+
+        &:active {
+          background: $primary-bg-color;
+        }
+      }
+
+      input[type="radio"]:checked ~ label {
+        font-weight: 800;
+      }
+    }
+
+
+    // HEATMAP PAGE - FORM - DATASETS DROPDOWN
+    &:nth-child(3) {
+      padding: 0;
+      margin: 0;
+      border: 0;
+
+      @include media-breakpoint-down(md) {
+        padding: 5px;
+      }
+
+      .dropdown {
+        display: flex;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+          flex-direction: column;
+        }
+
+        .dropdown-menu {
+          top: calc(100% - 5px);
+        }
+
+        button {
+          padding-left: 20px;
+          border-radius: 0;
+
+          @include media-breakpoint-down(md) {
+            padding-left: 12px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+
+    // HEATMAP PAGE - FORM - SUBMIT BUTTON
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-left: 1px solid $heatmap-nav-border-color;
+      background: $heatmap-nav-button-bg-color;
+
+      @include media-breakpoint-down(md) {
+        margin: 10px 5px 0 5px;
+        border-radius: 5px;
+        border: 0;
+      }
+
+      &:hover {
+        background: $primary-bg-color-darker;
+      }
+    
+      .btn-secondary {
+        display: inline-block;
+        outline: none;
+        padding: 0 30px;
+        background: url($images-dir + 'btn-refresh.svg') no-repeat center center;
+
+        &:hover {
+          background: url($images-dir + 'btn-refresh.svg') no-repeat center center !important;
+        }
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          padding: 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+// HEATMAP PAGE - CONTROLS - MAP LOCATIONS - WRAPPER
+.map-locations {
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  z-index: 1000;
+  border-radius: 22px;
+  background-color: $heatmap-controls-primary-bg;
+
+  .mobile {
+    display: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    top: 90px;
+    right: 20px;
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: inline-block;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    max-width: 240px;
+    max-height: 70%;
+    top: 80px;
+    right: 10px;
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - MAP LOCATIONS
+  .menu {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 10px 60px 13px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    opacity: 1;
+    background: $secondary-bg-color;
+
+    .circle {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      border-radius: 50%;
+      border: 2px solid $text-color;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 8px);
+        background: url($images-dir + 'map-point-plus.svg') no-repeat;
+      }
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - MAP LOCATIONS - LOCATIONS LIST
+  .locations {
+    z-index: 1000;
+
+    ul {
+      margin-top: 10px;
+      padding-left: 36px;
+      padding-right: 20px;
+      font-size: 15px;
+      list-style-image: url($images-dir + 'li-bullet.svg');
+
+      @include media-breakpoint-down(xs) {
+        max-height: 244px;
+        overflow-y: scroll;
+        font-size: 13.5px;
+      }
+    }
+
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+// HEATMAP PAGE - CONTROLS - PLAYER, TIMELINE
+.player {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  z-index: 1000;
+
+  @include media-breakpoint-down(xs) {
+    bottom: -30px;
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - ANIMATION BUTTONS
+  .next-btn, .prev-btn, .animate-btn, .lock-btn {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 50%;
+    opacity: .7;
+    border: 2px solid $text-color;
+    box-shadow: 0 0 0 4px $secondary-bg-color;
+    background: $secondary-bg-color;
+    cursor: pointer;
+
+    @media (max-width: 320px) {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 7px;
+      height: 12px;
+      position: absolute;
+      top: calc(50% - 6px);
+      left: calc(50% - 4px);
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - START/PAUSE ANIMATION
+  .animate-btn {
+    width: 57px;
+    height: 57px;
+    opacity: 1;
+
+    @include media-breakpoint-down(md) {
+      order: 3;
+    }
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:after {
+      width: 10px;
+      height: 16px;
+      top: calc(50% - 8px);
+    }
+
+    &.play:after {
+      left: calc(50% - 3px);
+      background: url($images-dir + 'btn-play.svg') no-repeat;
+    }
+  
+    &.pause:after {
+      left: calc(50% - 5px);
+      background: url($images-dir + 'btn-pause.png') no-repeat;
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - NEXT STEP ANIMATION
+  .next-btn {
+    @include media-breakpoint-down(md) {
+      order: 3;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-right: 0;
+    }
+
+    &:after {
+      background: url($images-dir + 'btn-next.svg') no-repeat;
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - PREVIOUS STEP ANIMATION
+  .prev-btn {
+    @include media-breakpoint-down(md) {
+      order: 2;
+    }
+
+    &:after {
+      background: url($images-dir + 'btn-prev.svg') no-repeat;
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - TIMELINE WRAPPER
+  .timeline-wrapper {
+    display: flex;
+    
+    @media (max-width: 390px) {
+      display: block;
+      text-align: center;
+      margin-right: 10px;
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - TIMELINE DATE
+  .date {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    background: $heatmap-controls-primary-bg;
+    
+    @media (max-width: 390px) {
+      margin-right: 0;
+    }
+
+    &:hover .lock-btn:after {
+      background-position: 0 0;
+    }
+
+    &.lock {
+      background: $heatmap-controls-secondary-bg;
+
+      &:hover .lock-btn:after {
+        background-position: -8px 0;
+      }
+      
+      .lock-btn {
+        border: 0;
+        box-shadow: none;
+
+        &:after {
+          background-position: 0 0;
+        }
+      }
+    }
+
+    span {
+      padding: 3px 6px 4px 12px;
+    }
+
+
+    // HEATMAP PAGE - CONTROLS - TIMELINE DATE - LOCK DATE BUTTON
+    .lock-btn {
+      width: 26px;
+      height: 26px;
+      margin-right: 2px;
+      opacity: 1;
+      border: 1px solid $text-color;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 11px;
+        background: url($images-dir + 'btn-lock.svg') no-repeat -8px 0;
+        background-size: cover;
+      }
+
+      &:hover:after {
+        background-position: 0 0;
+      }
+    }
+  }
+
+  
+  // HEATMAP PAGE - CONTROLS - TIMELINE
+  .timeline {
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    position: relative;
+    border-radius: 100px;
+    background-color: $heatmap-controls-primary-bg;
+
+    @include media-breakpoint-down(md) {
+      padding: 0;
+      order: 1;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 390px) {
+      display: inline-block;
+      margin: 4px 0 0 0;
+    }
+
+    
+    // HEATMAP PAGE - CONTROLS - TIMELINE - ONE HOUR ITEM
+    .hour {
+      cursor: pointer;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        margin-left: 10px;
+      }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $text-color;
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        width: 20px;
+        height: 2px;
+        background: $text-color;
+      }
+    }
+
+    
+    // HEATMAP PAGE - CONTROLS - TIMELINE - LAST ITEM
+    .end-dot:before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: $text-color;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+
+  // HEATMAP PAGE - CONTROLS - TIMELINE - TIME
+  .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    padding: 3px 0 4px 0;
+    z-index: 1000;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: ew-resize;
+    background: $secondary-bg-color;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+
+      &.hour-0 {left: 0;}
+      &.hour-1 {left: 25px;}
+      &.hour-2 {left: 50px;}
+      &.hour-3 {left: 75px;}
+      &.hour-4 {left: 100px;}
+      &.hour-5 {left: 125px;}
+      &.hour-6 {left: 150px;}
+      &.hour-7 {left: 175px;}
+      &.hour-8 {left: 200px;}
+      &.hour-9 {left: 225px;}
+      &.hour-10 {left: 250px;}
+      &.hour-11 {left: 275px;}
+      &.hour-12 {left: 300px;}
+      &.hour-13 {left: 325px;}
+      &.hour-14 {left: 350px;}
+      &.hour-15 {left: 375px;}
+      &.hour-16 {left: 400px;}
+      &.hour-17 {left: 425px;}
+      &.hour-18 {left: 450px;}
+      &.hour-19 {left: 475px;}
+      &.hour-20 {left: 500px;}
+      &.hour-21 {left: 525px;}
+      &.hour-22 {left: 550px;}
+      &.hour-23 {left: 585px;}
+    }
+
+
+    // HEATMAP PAGE - CONTROLS - TIMELINE - LOADER
+    .custom-spinner-border {
+      margin: 3px 0 4px 0;
+    }
+  }
+}
+
+
+// HEATMAP PAGE - POPUPS
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  font-family: 'Be Vietnam', sans-serif;
+  text-align: center;
+  color: $text-color;
+
+  
+  // HEATMAP PAGE - POPUPS - LOCATION/DATASET NAME
+  strong {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  
+  // HEATMAP PAGE - POPUPS - DATASET VALUE
+  #place-intesity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 24pt;
+    font-weight: 700;
+
+    #sum-number {
+      margin-left: 5px;
+      font-size: 11pt;
+    }
+  }
+
+  
+  // HEATMAP PAGE - POPUPS - PAGINATION
+  .popup-pagination {
+    display: flex;
+    margin: 1em 0 1em 0;
+
+    button {
+      height: 32px;
+      width: 32px;
+      border: 0;
+      border-radius: 24px;
+      background: url($images-dir + 'btn-prev.svg') $heatmap-popup-btn-bg no-repeat center center;
+      transition: background 0.3s ease-out;
+      outline: none !important;
+
+      &:hover {
+        background: url($images-dir + 'btn-prev.svg') $heatmap-popup-btn-hover-bg no-repeat center center;
+      }
+      
+      &.next {
+        background: url($images-dir + 'btn-next.svg') $heatmap-popup-btn-bg no-repeat center center;
+
+        &:hover {
+          background: url($images-dir + 'btn-next.svg') $heatmap-popup-btn-hover-bg no-repeat center center;
+        }
+      }
+    }
+
+    
+    // HEATMAP PAGE - POPUPS - PAGINATION - COUNT PAGES
+    p {
+      margin: auto;
+    }
+  }
+}

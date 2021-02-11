@@ -1,0 +1,1004 @@
+# jmeno datasetu, pod kterym bude zobrazen v aplikaci
+display-name: Obsazení místností
+# barva pro dataset
+display-color: '#2c3e50'
+# jednoslovný název datasetu, pod kterym bude reprezentovana v architektuře
+dataset-name: OBSAZENIMISTNOSTI
+# root slozka, ktera obsahuje odkazy na dataset
+url: https://openstore.zcu.cz/
+# volitelny parameter, ktery specifikuje vzor jmena datasetu, ktera se budou stahovat
+regex: OD_ZCU_OBSAZENI_[0-9][0-9]_[0-9][0-9][0-9][0-9]_CSV.zip
+# volitelny parametr, ktery udava jednou za kolik dní se budou nová data vyhledávat
+update-period: 24
+# pozice jednotlivych zarizeni, ktera jsou v datasetu
+devices:
+  - EP-110:
+      x: 49.7240758
+      y: 13.3503422
+  - EP-120:
+      x: 49.7242717
+      y: 13.3502872
+  - EP-130:
+      x: 49.7242311
+      y: 13.3506561
+  - EP-206:
+      x: 49.7240550
+      y: 13.3506817
+  - EP-208:
+      x: 49.7239544
+      y: 13.3507031
+  - UF-124:
+      x: 49.7253672
+      y: 13.3522111
+  - UP-101:
+      x: 49.7247431
+      y: 13.3504881
+  - UP-104:
+      x: 49.7247206
+      y: 13.3502172
+  - UP-108:
+      x: 49.7249114
+      y: 13.3501636
+  - UP-112:
+      x: 49.7249600
+      y: 13.3504022
+  - UP-115:
+      x: 49.7249669
+      y: 13.3504667
+  - US-207:
+      x: 49.7268203
+      y: 13.3517944
+  - US-217:
+      x: 49.7268950
+      y: 13.3515047
+  - UU-104:
+      x: 49.7248192
+      y: 13.3521414
+  - UU-106:
+      x: 49.7248089
+      y: 13.3519550
+  - UU-206:
+      x: 49.7248089
+      y: 13.3519550
+  - UU-305b:
+      x: 49.7248072
+      y: 13.3520450
+  - UU-305:
+      x: 49.7248089
+      y: 13.3519550
+  - UU-306:
+      x: 49.7249978
+      y: 13.3518961
+  - UU-307:
+      x: 49.7246900
+      y: 13.3518664
+  - UU-308:
+      x: 49.7248919
+      y: 13.3518222
+  - UU-309:
+      x: 49.7248764
+      y: 13.3516278
+
+  - SP-107:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-302:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-333:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-303:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-310:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-215:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-608:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-311:
+      x: 49.7366928
+      y: 13.3708044
+
+  - CH-118:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-234:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-108:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-207:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-452:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-214:
+      x: 49.7369147
+      y: 13.3714431
+
+  - CH-105:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-334:
+      x: 49.7268169
+      y: 13.3525456
+
+  - KL-310:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - PC-124:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CD-121:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UB-106:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-117:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-109:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-411:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-610:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-112:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-222:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-439:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-304:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-202:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-137:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-308:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-410:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UX-236:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-018:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-321:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-308:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-203:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-126:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-331:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-213:
+      x: 49.7369147
+      y: 13.3714431
+
+  - EK-715:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-328:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-312:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - TS-330:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EL-209:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-326:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-305:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-120:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SD-200:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-607:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-303:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-305:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-307:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-211:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-024:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-106:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-233:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-110:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UK-311:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-108:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-117:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-140:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-211:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-416:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-303:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-207:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-409:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-207:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-202:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-410:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SD-325:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-305:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-105:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-112:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-104:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KO-106:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-309:
+      x: 49.7371142
+      y: 13.3712953
+
+  - UC-422:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-103:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-105:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-211:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-219:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-311:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-109:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-309:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-104:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-503:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-212:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-142:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UU-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-220:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-026:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CD-201:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-329:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-107:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EL-311:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-319:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-103:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UU-105:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-200:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-236:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-304:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-221:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-111:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SO-118:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UU-108:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-106:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-236:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-311:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-303:
+      x: 49.7369228
+      y: 13.3708172
+
+  - UF-114:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-602:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SD-206a:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-306:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-205:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-330:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-203:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-207:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-506:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-309:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-228:
+      x: 49.7365786
+      y: 13.3711372
+
+  - EU-302:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-224:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-307:
+      x: 49.7371747
+      y: 13.3710619
+
+  - UL-108:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-104:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UK-221:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-223:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-504:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UX-127:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-453:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-209:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CD-154:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-302:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-505:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-241:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-301:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-122:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-208:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UK-226:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-432:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EU-102:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - PC-116:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-308:
+      x: 49.7371661
+      y: 13.3712017
+
+  - CD-254:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-302:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-209:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-306:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-100:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-317:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-315:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-206:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-111:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-203:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-201:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-323:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-206:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-210:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-110:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-300:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-209:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-325:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-332:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-302:
+      x: 49.7364017
+      y: 13.3709547
+
+  - HJ-309:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-107:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - EL-510:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-310:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-221:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-223:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-205:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-201:
+      x: 49.7364017
+      y: 13.3709547
+
+  - CH-304:
+      x: 49.7369956
+      y: 13.3708253
+
+  - SP-320:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-302:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SD-203:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CD-304:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-417:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SP-420:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UL-409:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UU-209:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - PC-423:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UX-234a:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-213:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-147:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-311:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-237:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-202:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-324:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-107:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-235:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - VC-301:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UF-138:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-305:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-008:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-303:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-242:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - JJ-331:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-311:
+      x: 49.7369147
+      y: 13.3714431
+
+  - EU-304:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-309:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-332:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - RJ-211:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - SD-204:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-333:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-317:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-310:
+      x: 49.7369719
+      y: 13.3714056
+
+  - EU-503:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-329:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - PC-408:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-326:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-102:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-107:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UC-327:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-305:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - CH-204:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - ST-408:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-315:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - KL-303:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - UN-657:
+      x: UNKNOWN!
+      y: UNKNOWN!
+
+  - HJ-218:
+      x: UNKNOWN!
+      y: UNKNOWN!
+  - CD-212:
+      x: UNKNOWN!
+      y: UNKNOWN!
+

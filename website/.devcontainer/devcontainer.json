@@ -1,0 +1,25 @@
+{
+    "forwardPorts": [
+        8000,
+        27017
+    ],
+    "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "felixfbecker.php-intellisense",
+        "whatwedo.twig",
+        "felixfbecker.php-debug",
+        "junstyle.php-cs-fixer",
+        "dbaeumer.vscode-eslint",
+        "refgd.easy-compile",
+        "mongodb.mongodb-vscode"
+    ],
+    "workspaceFolder": "/var/www/symfony",
+    "service": "php-fpm",
+    "dockerComposeFile": [
+        "../../docker-compose.yml",
+        "../../docker-compose-dev.yml"
+    ],
+    "mounts": [
+        "source=vscode-extensions-php,target=/var/www/symfony/.vscode-server/extensions,type=volume"
+    ]
+}
