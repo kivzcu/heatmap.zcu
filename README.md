@@ -101,17 +101,17 @@ Script `modules/crawler/crone_update_script.py` is executed by systems cron (`mo
 ### SASS style file
 CSS color settings (backgrounds, controls, ...).
 
-`public/css/style.scss`
+`website/public/css/style.scss`
 
 ### Heatmap locations list
 Locations with coordinates.
 
-`public/templates/heatmap-locations.html.twig`
+`website/public/templates/heatmap-locations.html.twig`
 
 <img src="./doc/images/heatmap-locations-list.png" style="width: 250px; height: auto;">
 
 ### Intro heatmap webpage
-`public/templates/index.html.twig`
+`website/public/templates/index.html.twig`
 
 ### Heatmap webpage
-`public/templates/heatmap.html.twig`
+`website/public/templates/heatmap.html.twig`
