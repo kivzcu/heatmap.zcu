@@ -1,5 +1,6 @@
 # Heatmap.ZČU
-App was created within the school project by ZČU students. The main goal of this project is to create a simple and generic tool for vizualization of heatmap like datasets. The first implementation can be seen at https://heatmap.zcu.cz.
+
+This app was created as part of a course project by UWB students [Tomáš Ballák](https://github.com/ballakt) and [Martin Šebela](https://github.com/msebela). The main goal of this project is to create a simple and generic tool for vizualization of heatmap-like datasets. The first implementation can be seen at https://heatmap.zcu.cz.
 ## Intro webpage
 <img src="./doc/images/website-intro.png" style="width: 600px; height: auto;">
 
